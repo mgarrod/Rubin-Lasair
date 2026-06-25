@@ -1119,7 +1119,7 @@ function scheduleBlock(sch){
   if(!sch.next_mjd){
     // Nothing scheduled = your follow-up is most valuable here.
     return `<div class="sched gap"><span class="k">Rubin revisit</span><br>
-      <span class="v gapv">none scheduled — your follow-up fills the gap</span></div>`;
+      <span class="v gapv">none scheduled</span></div>`;
   }
   // How soon, in human terms
   const nowMjd = Date.now()/86400000 + 40587.0;
